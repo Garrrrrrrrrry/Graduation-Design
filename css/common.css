@@ -1,0 +1,138 @@
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.style_red {
+    color: #fefefe;
+}
+
+/* 底部版权 */
+.mod_copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top:20px ;
+    border-top: 1px solid rgb(177, 160, 160);
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}
+/* 黑色顶部导航条 */
+.top_bar {
+    height: 35px;
+    line-height: 35px;
+    background: rgb(42, 42, 41);
+    color: #666;
+}
+
+.top_bar ul.fr li {
+    float: left;
+
+}
+
+.top_bar ul.fr li:nth-child(even) {
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+/* logo+搜索框区域 */
+.search {
+    position: relative;
+    height: 110px;
+    line-height: 110px;
+}
+
+
+.search_content img {
+	margin-left: 200px; 
+}
+
+
+.search .search_content {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 60px;
+    border: 2px solid gray;
+    border-radius: 25px;
+	transform: translate(30%,8%);
+}
+
+.search .search_content input {
+    display: inline-block;
+    width: 310px;
+    /* height: 38px; */
+    padding-left: 15px;
+    margin-left: 15px;
+    border-right: 1px solid gray;
+    font-size: 16px;
+
+}
+
+.search .search_content i {
+	font-size: 30px;
+    position: absolute;
+    color: gray;
+    right: 23px;
+}
+
+/* 功能导航条区域 */
+.nav {
+	display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #ffba7d;
+	/* flex-direction: column; */
+}
+
+.nav ul {
+    display: flex;
+	margin-left: 180px;
+}
+.nav ul span{
+	display:flex;
+	float:right;
+	margin-left: 60px;
+}
+.nav_r{
+	margin-left: 280px;
+}
+
+.nav ul li {
+   /* flex-grow: 1; */
+   margin-left: 10px;
+   /* margin-right: 50px; */
+   float: left;
+}
+
+.nav ul li a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #3d3a3a;
+    font-weight: 650;
+	width:80px;
+}
+
+.nav ul li a:hover {
+    background: #f7d25a;
+    color: white;
+	transition: all 0.5s;
+}

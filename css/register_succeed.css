@@ -1,0 +1,68 @@
+body {
+	/* 设置背景渐变 */
+	background-image: linear-gradient(to left,
+			#ffe6d9, #fff3ee);
+	display: block;
+	justify-content: center;
+}
+
+/* 顶部logo*/
+.header {
+	width: 100%;
+}
+.header div.logo {
+	width: 1200px;
+	margin: 0 auto;
+	height: 110px;
+}
+
+.header div.logo img {
+	height: 110px;
+}
+
+.header span{
+    line-height: 110px;
+    font-size:18px ;
+    color: gray;
+}
+
+.header span a{
+	color:#d12709;
+}
+
+.success_box {
+    width: 600px;
+    height: 320px;
+    border: 1px solid rgb(209, 205, 205);
+    margin: 100px auto;
+    box-shadow: 2px 2px 1px 1px rgb(209, 205, 205);
+    background: rgb(255, 255, 255);
+	margin-top: 80px;
+}
+.success_box ul {
+    width: 550px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.success_box ul li{
+	margin-bottom: 15px;
+}
+
+.success_box ul li:nth-child(2) {
+    font-size: 35px;
+}
+
+.success_box ul button {
+    width: 210px;
+    height: 30px;
+    background: #ddb61a;
+	font-weight: 600;
+}
+
+.change {
+    margin-top: 22px;
+    margin-right: 20px;
+    text-align: right;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register page</title>
+		<style>html { overflow-x:hidden; }</style>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header">
+				<a href="#"><div class="logo"><img src="./icon/logo.png" alt=""></a>
+				<span class="fr">已有账户?&nbsp;<a href="login.html">请登录>></a></span>
+			</div>
+		</header>	
+		
+		<div class="registerarea ">
+		    <h3>注册新用户</h3>
+		    <div class="reg_form">
+		        <form>
+		            <ul id="msg">
+		                <li>
+		                    <label for="name">用户名</label>
+		                    <input type="text" class="inp" placeholder="请输入用户名" id="name" name="username" required>
+		                    <span id="nameReg"></span>
+		                <li>
+		                    <label for="phone">手机号码</label>
+		                    <input type="text" class="inp" placeholder="请输入手机号码" id="phone" name="phonenum" required>
+		                    <span id="phoneReg"></span>
+		                <li>
+		                    <label for="password">登录密码</label>
+		                    <input type="password" class="inp" placeholder="请设置登录密码" id="password" name="password" required>		                    <span id="passwordReg"></span>
+		                <li class="safe">安全程度
+		                    <em class="ruo">弱</em>
+		                    <em class="zhong">中</em>
+		                    <em class="qiang">强</em>
+		                </li>
+		                <li>
+		                    <label for="repassword">确认密码</label>
+		                    <input type="password" class="inp" placeholder="请再次输入密码" id="repassword" name="repassword" required >
+		                    <span id="repasswordReg"></span>
+		                <li class="agree"><input type="checkbox" name="" id="checkbox" checked>
+		                    同意协议并注册 <a href="#">《知晓用户协议》</a>
+		                </li>
+		                <li>
+		                    <input type="button" value="完成注册" class="btn" id="registe">
+		                </li>
+		            </ul>
+		        </form>
+		    </div>
+		</div>
+		
+		<div class="bottom">
+			<footer>
+				<div class="mod_copyright ">
+					<div class="links">
+						<a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a href="#">营销中心</a> | <a href="#">宠物周边</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a> | <a href="#">动物社区</a> | <a href="#">萌宠公益</a> | English vision | Contact U
+					</div>
+					<div class="copyright ">
+						地址：广东工程职业技术学院 邮编:00000 电话:001-555-4000 邮箱: 1632435761@qq.com <br>
+						粤ICP备1234567号
+					</div>
+				</div>
+			</footer>
+		</div>
+			
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/register.js"></script>
+	</body>
+</html>

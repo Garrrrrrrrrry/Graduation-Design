@@ -1,0 +1,345 @@
+body {
+	background-color: #ffefe7;
+}
+
+/* 顶部黑色导航条 */
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.style_red {
+	color: #fefefe;
+}
+
+.top_bar {
+	height: 35px;
+	line-height: 35px;
+	background: rgb(42, 42, 41);
+	color: #888;
+}
+
+.top_bar ul.fr li {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.top_bar ul.fr li:nth-child(even) {
+	width: 1px;
+	height: 20px;
+	background-color: #666;
+	margin: 8px 16px;
+}
+
+/* logo+搜索框区域 */
+
+
+.logo {
+	height: 120px;
+	border-radius: 25px;
+	transform: translate(60%, 8%);
+}
+
+/* iconfont样式（搜索） */
+@font-face {
+	font-family: "iconfont";
+	/* Project id 3683917 */
+	src: url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.eot?t=1665297403262');
+	/* IE9 */
+	src: url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.eot?t=1665297403262#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANMAAsAAAAABwgAAAL9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACCcAqCBIIAATYCJAMICwYABCAFhGcHMBs8BsgOJU0DiggPJANEBNF+r7P3LikiSEBwEaaRLSuWqJlV4woACsj9eefyMyDO2AGCAlZdLr3j9KVpR+TODdgyq80hutlp/J///3vHfzQE5wWRP6ixF81FDyzA9AM2xrZOHngnD8xbZBdxJy7iEYGa+stiOrmooho4buGYAfgyhzqDLDu2qJUcsDb9siynqgvl0IVZ7FVG2pbuA/ZEn4/v4sKapKyA8masK1SA40/ReEjRW+qleKF3vjp5cEIZCvTemTHmdNunMUvivZmp2WQ311GpzoJP/UolTu/7j0cQ5VBmbdBapu+JoeytZiaQk+75gIpRm5CmurQZm9Z6jo173Qw6bVL5CAmND4S9D9/Ybsew+cj98NHRkRHPuYQZd9udmtvnnT+qfVQ5f/tx+eMdc58exj7UO2djdM3o1hHZWHPfPq+XQfvHR0fdN+DISCqIr1746//6yU6T7Q9fLcyNkRqb5Jg+KaapKRX19ZebGi/MjaxPHHi5Fw63PRQGT1R+xcHeZXl+f9Bqvxy/vGFScLQa/Z3Yajgv/3KE1lvllVUEFC5dff8xp/7Se+1IK6arlY//OfT9vayuJ1WWB40HUKoqjhSTfvlvXHirvbW83ug/1rUyeL2hdUfkLVVlMCdQ/Z7swQ9WLAEisx8g5SbGdCbzR0UTauIQJcjd0OtYdaMXSYfqGr2Os5pWGRSq64hlXk8oU8tAKFfdGKipl8LltTQiMBO5BroakCDUtwhJXRehUN8JlnkvUKapNyhX33+oaV7U2ayWroHyKeYYVsDmNqhGxMATFYu4VmKlpONoXaQWU1Eth2Bs3/7lVDE2YDrFFFFWxjHGQ54SPSzSj8M6HYECJRqMWJSKMSEtut+6pqdEIaIH+SiMw2AKULM2kBpCGPAczYrfVwlTkuhwKBCrjVMitcwdihUlBoAVyw2gpjvZRiRTisMwPIhHpaQeVGRaMZ0XJyChuZ8GhjBRVCOigjTRGMVD5VHrK/VfjzLaQJoUuFehvIJIokQAAAAAAA==') format('woff2'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.woff?t=1665297403262') format('woff'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.ttf?t=1665297403262') format('truetype'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.svg?t=1665297403262#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+	content: "\e62f";
+}
+
+/*  */
+
+.iconfont {
+	font-family: "iconfont";
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.search w img {
+	margin-left: 800px;
+}
+
+/* #ad{
+    width:300px;
+    height: 300px;
+    background-color:antiquewhite;
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    display: none;
+} */
+
+/* 顶部右上角广告 */
+#box {
+	height: 90px;
+	width: 220px;
+	position: absolute;
+	right: 150px;
+	top: 0px
+}
+
+#box>#icon {
+	width: 100%;
+}
+
+#close {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 50px;
+	left: 320px;
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+#icon {
+	margin-left: 100px;
+}
+
+/* a {
+    color: black;
+    text-decoration: none;
+} */
+
+a:hover {
+    color: #e2231a;
+}
+
+.content {
+    margin: 55px auto;
+    width: 990px;
+}
+
+.t-head>h4 {
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #e2231a;
+    width: auto;
+    display: inline-block;
+    color: #e2231a;
+}
+
+.sct {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sct>.st {
+    border: 1px solid #ddd;
+    background-color: #ffcd69;
+    width: 990px;
+    margin-bottom: 10px;
+}
+
+.sct>.st>.thead {
+    display: table-row;
+}
+
+.sct>.st>.thead>div {
+    display: table-cell;
+    padding: 10px;
+}
+
+.sct>.st>.thead>div:nth-child(1) {
+    width: 30px;
+    text-align: center;
+}
+
+.sct>.st>.thead>div:nth-child(2) {
+    width: 100px;
+}
+
+.sct>.st>.thead>div:nth-child(3) {
+    width: 390px;
+}
+
+.sct>.st>.thead>div:nth-child(4) {
+    width: 170px;
+    text-align: right;
+}
+
+.sct>.st>.thead>div:nth-child(5) {
+    width: 100px;
+    text-align: center;
+}
+
+.sct>.st>.thead>div:nth-child(6) {
+    width: 100px;
+    text-align: center;
+}
+
+.sct>.st>.thead>div:nth-child(7) {
+    width: 100px;
+}
+
+.sct .item {
+    border: 1px solid #ddd;
+	background-color: #ffe6b2;
+}
+
+.sct .item>.tbody {
+    display: table-row;
+}
+
+.sct .item>.tbody>div {
+    display: table-cell;
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+.sct .item>.tbody>div:nth-child(1) {
+    width: 30px;
+}
+
+.sct .item>.tbody>div:nth-child(2) {
+    width: 100px;
+}
+
+.sct .item>.tbody>div:nth-child(3) {
+    width: 390px;
+}
+
+.sct .item>.tbody>div:nth-child(4) {
+    width: 170px;
+    text-align: right;
+}
+
+.sct .item>.tbody>div:nth-child(5) {
+    width: 100px;
+    text-align: center;
+}
+
+.sct .item>.tbody>div:nth-child(6) {
+    width: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sct .item>.tbody>div:nth-child(7) {
+    width: 100px;
+}
+
+.sct input[type=number] {
+    width: 50px;
+    text-align: center;
+}
+
+.p-head {
+    width: 990px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.p-head>h5 {
+    color: #e2231a;
+    display: inline-block;
+    border-bottom: 2px solid #e2231a;
+    line-height: 30px;
+}
+
+.productsBox {
+    display: flex;
+    width: 990px;
+    margin: 30px auto;
+}
+
+.product {
+    flex: 1;
+    height: auto;
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px dashed #ddd;
+}
+
+.product>* {
+    margin-bottom: 10px;
+}
+
+.product>p {
+    text-align: left;
+    height: 35px;
+    overflow: hidden;
+}
+
+/* 购物车按钮 */
+@font-face {
+  font-family: "iconfont"; /* Project id 3683917 */
+  src: url('//at.alicdn.com/t/c/font_3683917_rzqzqkp04th.eot?t=1668781974750'); /* IE9 */
+  src: url('//at.alicdn.com/t/c/font_3683917_rzqzqkp04th.eot?t=1668781974750#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMQAAsAAAAABtAAAALCAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACCcAqBQIE5ATYCJAMICwYABCAFhGcHPBsBBhHVk21kf4I4bq8AJBV0TbOiso/iBicryrxG42+kb3jIX2C6QAu4AQAAAACCh8/u3zt4mv2ESzGCKrOTy7hMKaDMWYTJfSuIgjAACUSDDbhANpl3iGynnNZWmGl8uABf6Dq5dku+LEmvnFBoUcQlQAB8IwkmdguA1amBI9CA9KKpdOeiy3OcpNeV6+7wMTjO1wwUnefKQtKnP5WzgAL8QCgJjXbTGgs/WH1rQDu31XoegV696DVYXvnV7Jv8CgIw5Kkhm1rON9VTR8mglsYZFJCXi6mTglalA2g0TbsRONGDGrEFB8i18oHN8efFFxpA4lA4Ve3jN079cpeolbaop7hcF31OAg5AAVlAg+juT7QSiDZeYRxJAm3XCPiAbYd2xKEtCPXXOaVeAERR4ZlEX3rUJgmA5tlnq0DTpCxwpAm6eizZdcQwZt+lVOzaPXuDy3fawMFblu/63at2Ga47EREx4+i1yL79++YaT6+/turqulOjUh1LO+f/nvqTjLp+5oz8vj2kuhuoAs0FbgICj4XLqecnQ/f5NizzZ5Yj9z+5XNUBsFfrlP/P33DD0L77t7A0AC+akNhnr8Fc4D6hQ8DfU4aCRG2CIHWbqDOSKo4bajMYwOZ4Ajyfagy8y4zATeC9ulxE5lC4SaA0lwEHFgVw4qYahkzNxy0CzSQQ2gOkWEMg8HMcEh8uQOHnOqW5B3AQ4gOc+PkPQ6/IZRYpWXbFqAUdmA/UlgbvGSTWesEwd5qbog/kqaZhKNK8mt7hgDzHlukZShEPnqmHrXwOu45gZGrQShpFxirLfNtbUku9WjFqQQfMB9SWBh+Spfx9FwxzpxmkHgmeaqodFFI5QO3kAep7kGumZyiJeOCZpHqw1fOw6wiM7fMatJKKE2JjJXNJHpXT7dX+1w4BhmOSuRsVczS/ZhsxkVoPcZyGoBQAAA==') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3683917_rzqzqkp04th.woff?t=1668781974750') format('woff'),
+       url('//at.alicdn.com/t/c/font_3683917_rzqzqkp04th.ttf?t=1668781974750') format('truetype'),
+       url('//at.alicdn.com/t/c/font_3683917_rzqzqkp04th.svg?t=1668781974750#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gouwuche-tianchong:before {
+  content: "\e70c";
+}
+
+
+.product>button {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product>button:hover {
+    background-color: #e2231a;
+    color: white;
+    border-color: transparent;
+}
+
+#anniu {
+    width: 200px;
+    text-align: center;
+    margin-left: 350px;
+    background: rgb(245, 181, 5);
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+}

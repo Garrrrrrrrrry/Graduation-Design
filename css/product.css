@@ -1,0 +1,257 @@
+body {
+	background-color: #ffefe7;
+}
+
+/* 顶部黑色导航条 */
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.style_red {
+	color: #fefefe;
+}
+
+.top_bar {
+	height: 35px;
+	line-height: 35px;
+	background: rgb(42, 42, 41);
+	color: #888;
+}
+
+.top_bar ul.fr li {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.top_bar ul.fr li:nth-child(even) {
+	width: 1px;
+	height: 20px;
+	background-color: #666;
+	margin: 8px 16px;
+}
+
+/* logo+搜索框区域 */
+
+
+.logo {
+	height: 120px;
+	border-radius: 25px;
+	transform: translate(60%, 8%);
+}
+
+/* iconfont样式（搜索） */
+@font-face {
+	font-family: "iconfont";
+	/* Project id 3683917 */
+	src: url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.eot?t=1665297403262');
+	/* IE9 */
+	src: url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.eot?t=1665297403262#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANMAAsAAAAABwgAAAL9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACCcAqCBIIAATYCJAMICwYABCAFhGcHMBs8BsgOJU0DiggPJANEBNF+r7P3LikiSEBwEaaRLSuWqJlV4woACsj9eefyMyDO2AGCAlZdLr3j9KVpR+TODdgyq80hutlp/J///3vHfzQE5wWRP6ixF81FDyzA9AM2xrZOHngnD8xbZBdxJy7iEYGa+stiOrmooho4buGYAfgyhzqDLDu2qJUcsDb9siynqgvl0IVZ7FVG2pbuA/ZEn4/v4sKapKyA8masK1SA40/ReEjRW+qleKF3vjp5cEIZCvTemTHmdNunMUvivZmp2WQ311GpzoJP/UolTu/7j0cQ5VBmbdBapu+JoeytZiaQk+75gIpRm5CmurQZm9Z6jo173Qw6bVL5CAmND4S9D9/Ybsew+cj98NHRkRHPuYQZd9udmtvnnT+qfVQ5f/tx+eMdc58exj7UO2djdM3o1hHZWHPfPq+XQfvHR0fdN+DISCqIr1746//6yU6T7Q9fLcyNkRqb5Jg+KaapKRX19ZebGi/MjaxPHHi5Fw63PRQGT1R+xcHeZXl+f9Bqvxy/vGFScLQa/Z3Yajgv/3KE1lvllVUEFC5dff8xp/7Se+1IK6arlY//OfT9vayuJ1WWB40HUKoqjhSTfvlvXHirvbW83ug/1rUyeL2hdUfkLVVlMCdQ/Z7swQ9WLAEisx8g5SbGdCbzR0UTauIQJcjd0OtYdaMXSYfqGr2Os5pWGRSq64hlXk8oU8tAKFfdGKipl8LltTQiMBO5BroakCDUtwhJXRehUN8JlnkvUKapNyhX33+oaV7U2ayWroHyKeYYVsDmNqhGxMATFYu4VmKlpONoXaQWU1Eth2Bs3/7lVDE2YDrFFFFWxjHGQ54SPSzSj8M6HYECJRqMWJSKMSEtut+6pqdEIaIH+SiMw2AKULM2kBpCGPAczYrfVwlTkuhwKBCrjVMitcwdihUlBoAVyw2gpjvZRiRTisMwPIhHpaQeVGRaMZ0XJyChuZ8GhjBRVCOigjTRGMVD5VHrK/VfjzLaQJoUuFehvIJIokQAAAAAAA==') format('woff2'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.woff?t=1665297403262') format('woff'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.ttf?t=1665297403262') format('truetype'),
+		url('//at.alicdn.com/t/c/font_3683917_bk6hpxki918.svg?t=1665297403262#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+	content: "\e62f";
+}
+
+/*  */
+
+.iconfont {
+	font-family: "iconfont";
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.search w img {
+	margin-left: 800px;
+}
+
+/* #ad{
+    width:300px;
+    height: 300px;
+    background-color:antiquewhite;
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    display: none;
+} */
+
+/* 顶部右上角广告 */
+#box {
+	height: 90px;
+	width: 220px;
+	position: absolute;
+	right: 150px;
+	top: 0px
+}
+
+#box>#icon {
+	width: 100%;
+}
+
+#close {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 50px;
+	left: 320px;
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+#icon {
+	margin-left: 100px;
+}
+
+
+.locate{
+    margin: 45px 150px;
+    font-size: 14px;
+}
+.locate a{
+    color: rgb(245, 202, 11);
+}
+
+/* 商品区 */
+/*宠物主粮*/
+/*宠物主粮后面的列表*/
+.content-bottom{position:relative;top:-60px;padding-bottom:20px;width:1200px; margin:0 auto;}
+.content-bottom1_li .tab li{  float: right; height: 26px; margin-top: 10px; margin-left: 30px; line-height: 26px; text-align: center; color: #424242; }
+.content-bottom1_li .tab li:hover { color: #ff6700; border-bottom: 3px solid #ff6700;  }
+/*重写宠物主粮item的padding-top和height*/
+.content-bottom1_shop1 div,
+.content-bottom2_shop2 div {  position: relative;  height: 300px;  background-color: #fff;  overflow: hidden;}
+.content-bottom_shop  img {  margin-top: 30px;}
+
+/*宠物主粮*/
+/* .content-bottom2_pic{height: 119px;width: 1226px;background: url(../img/longAD2.jpg);margin-top: 10px;} */
+.content-bottom_shop{height: 614px;width: 1226px;}
+.content-bottom1_shop1 div{height:300px;width: 235px;}
+.content-bottom1_1{margin-right:12.7px;background:url(../images/pet_ration_left1.jpg);float:left;background-size:360px 320px;border-radius: 20px;}
+.content-bottom1_1:hover{transform: scale(1.03);}
+.content-bottom1_2{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom1_3{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom1_4{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom1_5{background:#fff;float: left;}
+.content-bottom2_shop2 div{height:300px;width: 235px;margin-top: 14px;}
+.content-bottom2_1{margin-right:12.7px;background:url(../images/pet_ration_left2.jpg);float: left;background-size:400px 350px;border-radius: 20px;}
+.content-bottom2_1:hover{transform: scale(1.03);}
+.content-bottom2_2{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom2_3{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom2_4{margin-right:12.7px;background:#fff;float: left;}
+.content-bottom2_5{background:#fff;float: left;}
+
+
+/*优化长广告*/
+.content-bottom1_pic{ margin-top: 40px;  }
+
+/*宠物零食*/
+.content-bottom1_pic{position: relative;height: 80px;width: 1200px;background: url(../images/shopimgFile.jpg);top:20px;}
+.content-bottom3_1{margin-right:12.7px;background:url(../images/pet_treats_left1.jpg);float: left;background-size:230px 320px;border-radius: 20px;}
+.content-bottom3_1:hover{transform: scale(1.03);}
+.content-bottom4_1{margin-right:12.7px;background:url(../images/pet_treats_left2.jpg);float: left;background-size:240px 300px;border-radius: 20px;}
+.content-bottom4_1:hover{transform: scale(1.03);}
+
+
+/*红/绿色优惠小标记*/
+.bottomFlagRed,
+.bottomFlagGreen {  position: absolute;  top: 0;  left: 50%;  margin-left: -32px;  width: 64px;  height: 18px;  font-size: 12px;  color: #fff;  line-height: 18px;  text-align: center;  }
+
+.bottomFlagRed   {  background-color: #e53935;  }
+.bottomFlagGreen {  background-color: #83c44e;  }
+
+
+/*bottom图片统一样式*/
+.bottomImg   {   width: 160px; height: 160px;  margin: 0 37px 18px;  }
+/*bottom标题统一样式*/
+.bottomTitle {   width: 100%;  font-size: 14px;  margin: 3px 0;  -ms-text-overflow: ellipsis;  text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;  text-align: center;  }
+/*bottom描述统一样式*/
+.bottomDesc  {   width: 100%;  font-size: 12px;  color: #b0b0b0;  text-align: center;  margin: 4px 0 12px;  -ms-text-overflow: ellipsis;  text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;  }
+/*bottom价格统一样式*/
+.bottomPrice {   width: 100%;  text-align: center;  font-size: 13px;  color: #b0b0b0;  }
+
+/*重写二级标题样式*/
+.content-picshop h2,
+.content-bottom h2      { line-height: 50px;  font-size: 22px;  padding-top: 60px;  margin: 0;  font-weight: 600;  }
+.content-bottom h2 .tab { float: right;  color: #424242;  font-size: 16px;  font-weight: normal;  line-height: 60px;  }
+
+/*右下角的两个框*/
+.bottomTop,
+.bottomBottom  { display: block;  width: 235px;  height: 145px;  background-color: #fff;  }
+.bottomBottom  { margin-top: 10px; }
+
+.bottomTop .bottomTitle {   margin-top: 45px;  float: left;  width: 120px; height:30px; font-weight: 700;}
+.bottomTop .bottomPrice {   float: left; width: 120px;}
+.bottomTop img {   width: 100px; float: right; }
+
+.bottomBottom .bottomTitle,
+.bottomBottom .bottomDesc  {  float: left; width: 120px; font-weight: 700;}
+
+.bottomBottom .bottomTitle {  font-size: 18px; margin-top: 45px; }
+.bottomBottom .bottomDesc  {  text-align: left;padding-left: 25px; }
+.bottomBottom span {  margin-top: 35px; }
+
+
+/*评论*/
+.bottomDiscuss {    position: absolute;  left: 0;  top: 245px;  width: 235px;  height: 55px;  padding: 8px 30px;  background-color: #ff6700;  color: #fff;  display: none;  }
+
+.bottomDiscuss .bottomReview,
+.bottomDiscuss .bottomAuthor {  display: block;  width: 174px;  font-size: 12px;  -ms-text-overflow: ellipsis;  text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;  }
+.bottomDiscuss .bottomAuthor {  color:rgba(255,255,255,0.6);}
+/*评论框  css3动画效果*/
+.content-bottom1_2:hover .bottomDiscuss,
+.content-bottom1_3:hover .bottomDiscuss,
+.content-bottom1_4:hover .bottomDiscuss,
+.content-bottom1_5:hover .bottomDiscuss,
+.content-bottom2_2:hover .bottomDiscuss,
+.content-bottom2_3:hover .bottomDiscuss,
+.content-bottom2_4:hover .bottomDiscuss,
+.content-bottom2_5:hover .bottomDiscuss{   -webkit-animation: upmove 1s ease;  -o-animation: upmove 1s ease;  animation: upmove 1s ease;  display: block;}
+@keyframes upmove { from {  top: 265px; opacity: 0; } to {   top: 245px;opacity: 1;  } }
+
+/* 更多详情箭头 */
+@font-face {
+  font-family: "iconfont"; /* Project id 3683917 */
+  src: url('//at.alicdn.com/t/c/font_3683917_hee4biwbm2.eot?t=1669027771154'); /* IE9 */
+  src: url('//at.alicdn.com/t/c/font_3683917_hee4biwbm2.eot?t=1669027771154#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAL8AAsAAAAABtQAAAKtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACCcAqBRIFdATYCJAMICwYABCAFhGcHOxskBhHVk01kXx3whujTGyO8IAzqgO+vlopQPzVyqSJVpON9Dh7+90fdhwGQYEYYeZIS1WaiqttMIhZsrrNxz3fKzePAvLSIzp8f9YtzVskINVb7HbBi+VLaAWbZQZkHQPqEmjcAcF7E/7mfzysv4Avgy2x8YPM1DigqbYQ784/+l+GVD2mX30EAlkSRgcwrON+EbX8Ld8ITjVMrIE8W/T1eCXNpQ6Nx0ByBKXStRixgAnJS3gDz8ffFX2KEOUhMFE5acefGitO5E9SoMYr6wuhyZfgyCZgACggDNIjyfl8hCtFGUljqND64WCPgB8MIFYhDSxHiX+ckWgPgjWnPRPcZj5ooAdC4MwPomnQvaEfp4tI2tTvm9qz8j+1Nu9xXR51vK1Widrri1cWr/AWfyncEV73npsxVK7eYa5x2mzY+npOz7YonPZOwjd3/GvQ1mLux8ELDVHdNVhkdXRlX8+CRI3FlXER+UPt2ZY50LdtTU9vTut4omXZvX3SlvZHJZAFgpM5U9h/+GxK3ni+7tH/m0AB8zzw1thhpYAYwvwWdgP/JrwciatMI8pnyEIAkoxCBBCxdJxgckyPfpoqc7jskMMfp7g1meOWgMMcHpXEhYIIVMWCKOelgSSj5m61wYhiF0BZAABMIBPbsgMSWE1DYc47SuPdggis/wRR7/oMllcJmPysChGNWhIrRgv5BafrOeUKOe72gnxtFTe4H0lRiJ8RBVA3usEOaY8H09gmzA0d9C1t+GTZNDwP1FRoOCuYhD0PX9pHA9K1YESpGC/QPlKbvXIjM5d+7oJ8bRUDUw0dTiXsHsUAEQO14HajqQQ6Z3j7B7IAjFGjBVmqwMXw9GNpHVWg4UEzwDLnQRXJQXrC9oP21dYAljlgKt59i7+eqVB1H2a9iVlp1QgAAAAA=') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3683917_hee4biwbm2.woff?t=1669027771154') format('woff'),
+       url('//at.alicdn.com/t/c/font_3683917_hee4biwbm2.ttf?t=1669027771154') format('truetype'),
+       url('//at.alicdn.com/t/c/font_3683917_hee4biwbm2.svg?t=1669027771154#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 100px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youjiantou_huaban:before {
+  content: "\e63e";
+}
+
+

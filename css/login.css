@@ -1,0 +1,161 @@
+body {
+	/* 设置背景渐变 */
+	background-image: linear-gradient(to left,
+			#ffbb77, #ffdac8);
+	display: flex;
+	justify-content: center;
+}
+
+/* 顶部logo*/
+.header {
+	width: 100%;
+}
+
+.header div.logo {
+	width: 1200px;
+	margin: 0 auto;
+	height: 110px;
+}
+
+.header div.logo img {
+	height: 110px;
+}
+
+/*登录框样式*/
+.a {
+	position: relative;
+	top: 10px;
+	left: 300px;
+	width: 1000px;
+	height: 400px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+	display: flex;
+}
+
+.b {
+	width: 800px;
+	height: 400px;
+	background: url(../icon/animals.jpg);
+	/* 让图片适应大小 */
+	background-size: cover;
+}
+
+.c {
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.d {
+	position: relative;
+	width: 250px;
+	height: 400px;
+}
+
+.d h1 {
+	position: absolute;
+	font: 600 30px '';
+	top: 28px;
+	border-bottom: 5px solid #ffbb77;
+	font-family: "仓耳渔阳体 W05";
+}
+
+.e {
+	width: 230px;
+	margin: 10px 0;
+	outline: none;
+	border: 0;
+	padding: 10px;
+	border-bottom: 3px solid rgb(80, 80, 170);
+	font: 900 15px '';
+}
+
+.f {
+	float: right;
+	margin: 20px 0;
+
+}
+
+.g {
+	position: absolute;
+	margin: 10px;
+	bottom: 10px;
+	right: 0;
+	display: block;
+	width: 150px;
+	height: 40px;
+	font: 700 20px '';
+	text-decoration: none;
+	line-height: 40px;
+	border-radius: 30px;
+	background-image: linear-gradient(to left,
+			#9c88ff, #3cadeb);
+	text-align: center;
+}
+
+.login_box {
+	position: absolute;
+	bottom: 60px;
+	top: 90px;
+}
+
+#login {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	color: #fff;
+	width: 100px;
+	height: 35px;
+	background-color: plum;
+	border-radius: 20px;
+	float: right;
+	transition: .3s;
+}
+
+#login:hover {
+	letter-spacing: 2px;
+	color: #000;
+	background-color: cornflowerblue;
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-image: url(../icon/follow.gif);
+	background-size: cover;
+}
+
+/* 转为行内块 */
+.wx{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	text-align: center;
+}
+.qq{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	text-align: center;
+}
+.block{
+	float: left;
+	padding-left: 10px;
+}
+.bottom{
+	text-align: center;
+	    margin-top: 40px;
+	    padding-top: 38px;
+}
+
+
+
+@font-face {
+  font-family: "仓耳渔阳体 W05";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/bwEOQ882gpb4/IrsvO-wgBO-MeYt3DDKWX.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/bwEOQ882gpb4/rzHiw1LptxuS1juKM6DHz.woff") format("woff");
+  font-display: swap;
+}

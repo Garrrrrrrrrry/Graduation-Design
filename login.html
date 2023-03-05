@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login page</title>
+		<!-- <style>html { overflow-x:hidden; }</style>
+		<style>html { overflow-y:hidden; }</style> -->
+		<link rel="stylesheet" href="css/base.css">
+		<!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/jquery-3.6.0.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo"><img src="./icon/logo.png" alt="">
+		</div>
+
+			<!-- 鼠标跟随 -->
+			<div class="img"></div>
+			<div class="a">
+				<div class="b"></div>
+				<div class="c">
+					<div class="d">
+						<h1>Login / Register</h1>
+						<div class="login_box">
+							<input type="text" class="e" placeholder="用户名" id="user" name="username" required>
+							<input type="text" class="e" placeholder="账户/手机号码" id="phone" name="phonenum" required>
+							<input type="password" class="e" placeholder="密码" id="pwd" name="password" required>
+							<div class="block">
+								<a href="#"><img src="./icon/WeChat%20.png" class="wx">&nbsp;微信登录</a>
+							</div>
+							<div class="block">
+								<a href="#"><img src="./icon/QQ.png" class="qq">&nbsp;QQ登录</a>
+							</div>
+							<a href="register.html" class="f">忘记密码?</a>
+						</div>
+						<a href="#">
+							<input type="button" id="login" value="LOGIN" ><!-- onclick="login()" -->
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom">
+				<footer>
+					<div class="mod_copyright ">
+						<div class="links">
+							<a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a href="#">营销中心</a> | <a href="#">宠物周边</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a> | <a href="#">动物社区</a> | <a href="#">萌宠公益</a> | English vision | Contact U
+						</div>
+						<div class="copyright ">
+							地址：广东工程职业技术学院 邮编:00000 电话:001-555-4000 邮箱: 1632435761@qq.com <br>
+							粤ICP备1234567号
+						</div>
+					</div>
+				</footer>
+			</div>
+			
+			<script src="js/jquery-3.6.0.min.js"></script>
+			<script type="text/javascript">
+				//alert
+				var f = document.querySelector('.f');
+				f.onclick = function(){
+					alert("是否要创建一个新的账户?");
+				}
+				//鼠标跟随
+				let img = document.querySelector('.img')
+				let y = 0;
+				let deg = 0;
+				let imgx = 0;
+				let imgy = 0;
+				let imgl = 0;
+				let imgt = 0;
+				let index = 0;
+				
+				window.addEventListener('mousemove',function(xyz){
+					imgx = xyz.x-img.offsetLeft-img.clientWidth /2
+					imgy = xyz.y-img.offsetTop-img.clientHeight /2
+					deg = 360*Math.atan(imgy/imgx)/(2*Math.PI)
+					index=0
+					let x = event.clientX
+					if(img.offsetLeft<x){
+						y=-180
+					}else{
+						y=0
+					}
+				})
+				setInterval(()=>{
+					img.style.transform="rotateZ("+deg+"deg)rotateY("+y+"deg)"
+					index++
+					if(index<50){
+						imgl+=imgx/50
+						imgt+=imgy/50
+					}
+					img.style.left = imgl+"px"
+					img.style.top = imgt+"px"
+				},10)
+			</script>
+			
+			<script src="js/jquery-3.6.0.min.js"></script>
+			<script src="js/login.js"></script>
+	</body>
+</html>

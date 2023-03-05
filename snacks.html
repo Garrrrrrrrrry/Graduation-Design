@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Page</title>
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/snacks.css">
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="back" style="margin: 20px;">
+		<a href="home.html" style="text-decoration: none;color: #fff;">BACK</a>
+	</div>
+
+    <!-- 显示商品列表 -->
+    <div class="container" id="list-item">
+
+
+    </div>
+    <!-- 显示按钮 -->
+    <div class="pagination">
+        <button id="prevPageBtn" class="turn">1</button>
+        <button id="nextPageBtn" class="turn">2</button>
+    </div>
+
+    <script>
+        //获取元素
+        var list = document.getElementById("list-item");
+        // 定义一个变量 表示页数
+        var page = 0;
+        $.get("./getGoodsList.php", {page: page},function(data){
+            // console.log(data)
+            var arr = data.data;
+            //定义变量 保存HTML结构
+            var str = "";
+            for (var i = 0;i < arr.length;i++){
+                //创建元素 显示数据
+                str += `<div class="list-item">
+                    <h3>${arr[i].goods_id}</h3>
+                    <img src = "${arr[i].goods_big_logo}">
+                    <p class="intro">${arr[i].goods_name}</p>
+                    <p class="price">价格:￥${arr[i].goods_price}</p>
+                    </div>`
+            }
+            list.innerHTML = str;
+        },"json")
+
+        //获取元素
+        var nextPageBtn = document.getElementById("nextPageBtn");
+        var prevPageBtn = document.getElementById("prevPageBtn");
+        nextPageBtn.onclick = function(){
+            page++;
+            $.get("./getGoodsList.php", {page: page},function(data){
+            // console.log(data)
+            var arr = data.data;
+            //定义变量 保存HTML结构
+            var str = "";
+            for (var i = 0;i < arr.length;i++){
+                //创建元素 显示数据
+                str += `<div class="list-item">
+                    <h3>${arr[i].goods_id}</h3>
+                    <img src = "${arr[i].goods_big_logo}">
+                    <p class="intro">${arr[i].goods_name}</p>
+                    <p class="price">价格:￥${arr[i].goods_price}</p>
+                    </div>`
+            }
+            list.innerHTML = str;
+        },"json")
+        }
+
+        prevPageBtn.onclick = function(){
+            page--;
+            $.get("./getGoodsList.php", {page: page},function(data){
+            // console.log(data)
+            var arr = data.data;
+            //定义变量 保存HTML结构
+            var str = "";
+            for (var i = 0;i < arr.length;i++){
+                //创建元素 显示数据
+                str += `<div class="list-item">
+                    <h3>${arr[i].goods_id}</h3>
+                    <img src = "${arr[i].goods_big_logo}">
+                    <p class="intro">${arr[i].goods_name}</p>
+                    <p class="price">价格:￥${arr[i].goods_price}</p>
+                    </div>`
+            }
+            list.innerHTML = str;
+        },"json")
+        }
+    </script>
+</body>
+</html>

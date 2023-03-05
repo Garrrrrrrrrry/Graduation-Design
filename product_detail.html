@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Product_detail Page</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/product_detail.css">
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/product_detail.js"></script>
+	</head>
+	<body>
+		<!-- 顶部黑色导航条 -->
+		<div class="top_bar">
+			<div class="w">
+				<!-- 左侧的菜单 -->
+				<div class="fl">
+					<span>Hello！欢迎您访问Animals Party！</span><span>服务热线：123456</span>
+				</div>
+				<!-- 右侧的菜单 -->
+				<ul class="fr">
+					<li>
+						<a href="login.html">你好，请登录</a>
+						<a class="style_red" href="register.html">免费注册</a>
+					</li>
+					<li class="line"></li>
+					<li><a href="my_order.html">我的订单</a>
+					</li>
+					<li class="line"></li>
+					<li>
+						<a href="javascript:;">我的宠物</a>
+					</li>
+					<li class="line"></li>
+					<li>
+						<a href="javascript:;">宠物会员</a>
+					</li>
+					<li class="line"></li>
+					<li>
+						<a href="javascript:;">客户服务</a>
+					</li>
+					<li class="line"></li>
+					<li>
+						<a href="javascript:;">网站导航</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 顶部logo+搜索框 -->
+		<div class="search w">
+			<img src="./icon/logo.png" alt="" class="logo">
+			<div class="search_content"><input type="search" placeholder="请输入搜索关键词...."
+					style="background-color: #ffefe7;"><a href="#" class="keep"><i class="iconfont">&#xe62f;</i></a>
+			</div>
+			<div id="box">
+				<img id="icon" src="images/advertising.jpg" alt="">
+				<img id="close" src="./icon/close.png" alt="">
+			</div>
+		</div>
+		</div>
+		
+		<!--功能导航条区域 -->
+		<div class="nav">
+			<div class="a">
+				<ul>
+					<li class="one"><a href="home.html">首页</a></li>
+					<li class="two"><a href="#">狗狗</a></li>
+					<li class="three"><a href="#">猫咪</a></li>
+					<li class="four"><a href="#">小宠</a></li>
+					<li class="five"><a href="#">水族</a></li>
+					<li class="six"><a href="#">爬虫</a></li>
+					<div class="nav_r">
+						<span>
+							<li class="seven"><a href="product.html">宠物商城</a></li>
+						</span>
+						<span>
+							<li class="eight"><a href="echarts.html">宠物数据</a></li>
+						</span>
+					</div>
+					<div class="b"></div>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		<div class="de_container w">
+		    <!-- 面包屑导航 -->
+		    <div class="crumb_wrap">
+		        <a href="home.html">首页</a> 〉 <a href="#">宠物零食 </a> 〉 <a href="#">GO海淘 </a> 〉 <a href="#">Go! 抗敏美毛系列三文鱼全犬粮25磅</a>
+		    </div>
+		    <!-- 产品介绍模块 -->
+		    <div class="product_intro clearfix">
+		        <!-- 预览区域 -->
+		        <div class="preview_wrap fl">
+		            <div class="preview_img">
+		                <i class="iconfont icon-icon-test"></i>
+		                <img src="./images/pet_ration1_big.png" alt="" class="img1">
+		                <div class="mask"></div>
+		                <div class="big">
+		                    <img src="./images/pet_ration1_big.png" alt="" class="bigImg">
+		                </div>
+		            </div>
+		
+		            <div class="preview_list">
+		                <a href="#" class="arrow_prev"></a>
+		                <a href="#" class="arrow_next"></a>
+		                <ul class="list_item">
+		
+		                    <li class="current">
+		                        <img src="./images/pet_ration1.jpg" alt="">
+		                    </li>
+		                    <li>
+		                        <img src="./images/pet_ration1_big.png" alt="">
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		        <!-- 产品详细信息 -->
+		        <div class="itemInfo_wrap fr">
+		            <div class="title">
+		               Go! 抗敏美毛系列三文鱼全犬粮25磅【保质期至2020年2月9日】
+		            </div>
+		            <div class="news">
+		                【GO海淘品牌日】爆款单品限时直降！全店3件5折起！
+		                <div class="summary">
+		                    <dl class="summary_price">
+		                        <dt>价格</dt>
+		                        <dd>
+		                            <i class="price">￥679.0 </i>
+		
+		                            <a href="#">降价通知</a>
+		
+		                            <div class="remark">累计评价666666</div>
+		
+		                        </dd>
+		                    </dl>
+		                    <dl class="summary_promotion">
+		                        <dt>促销</dt>
+		                        <dd>
+		                            <em>加购价</em> 满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换 购热销商品 详情 ➡️
+		
+		                        </dd>
+		                    </dl>
+		                    <dl class="summary_support">
+		                        <dt>支持</dt>
+		                        <dd>可配送港澳 99元免基础运费 | 破损包退换 | 免费问宠医</dd>
+		                    </dl>
+		                    <dl class="choose_size">
+		                        <dt>选择规格</dt>
+		                        <dd>
+		                            <a href="javascript:;" class="current">【三文鱼口味】犬粮大礼包1200g</a>
+		                            <a href="javascript:;">【鳟鱼口味】犬粮大礼包1200g</a>
+		                            <a href="javascript:;">【鲱鱼口味】犬粮大礼包1200g</a>
+		                            <a href="javascript:;">【三文鱼口味】猫粮大礼包1200g</a>
+		                            <a href="javascript:;">【鳟鱼口味】猫粮大礼包1200g</a>
+									<a href="javascript:;">【鲱鱼口味】猫粮大礼包1200g</a>
+		                            <a href="javascript:;">【鸡肉口味】狗零食大礼包1000g</a>
+		                            <a href="javascript:;">【鸡肉口味】猫零食大礼包1000g</a>
+		                        </dd>
+		                    </dl>
+		                    <dl class="choose_version">
+		                        <dt>增值保障</dt>
+		                        <dd>
+		                            <a href="javascript:;">试吃换新 ￥80.00</a>
+		
+		                        </dd>
+		                    </dl>
+		                    <dl class="choose_type">
+		                        <dt>分期付款</dt>
+		                        <dd>
+		                            <a href="javascript:;" class="current">不分期</a>
+		                            <a href="javascript:;">￥136 × 5期</a>
+		                            <a href="javascript:;">￥85 × 8期</a>
+		                            <a href="javascript:;">￥56.66 × 12期</a>
+		                            <a href="javascript:;">￥28.33 × 24期</a>
+		
+		                        </dd>
+		                    </dl>
+		                    <div class="choose_btns">
+		                        <div class="choose_amount">
+		                            <input type="type" value="1">
+		                            <a href="javascript:;" class="add">+</a>
+		                            <a href="javascript:;" class="reduce">-</a>
+		                        </div>
+		                        <a href="#" class="addcar">加入购物车</a>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			
+			<!-- 下半部分 -->
+			<div class="detail ">
+			    <div class="detail_tab_list">
+			        <ul>
+			            <li class="current">商品介绍</li>
+			            <li>规格与包装</li>
+			            <li>售后保障</li>
+			            <li>商品评价</li>
+			            <li>本店好评商品</li>
+			        </ul>
+			    </div>
+			    <div class="detail_tab_con">
+			
+			        <div class="item" style="display: block;">
+			            <dl class="brief">
+			                <dt>品牌：GO海淘</dt>
+			                <dd>商品名称：Go! 抗敏美毛系列三文鱼全犬粮</dd>
+			                <dd>商品编号：C1068402</dd>
+			                <dd>商品毛重：11.30kg</dd>
+			                <dd>商品产地：加拿大</dd>
+			                <dd>真空包装：否</dd>
+							<dd>密封条：是</dd>
+			                <dd>适用犬型：通用</dd>
+			                <dd>形状：颗粒状</dd>
+			                <dd>适用阶段：全阶段</dd>
+			                <dd>规格：25磅（11.3kg）</dd>
+			                <dd>口味：三文鱼口味</dd>
+			                <dd>国产/进口：进口</dd>
+			
+			            </dl>
+			            <img src="./images/product_inform1.jpg" alt="">
+			            <img src="./images/product_inform2.jpg" alt="">
+						<img src="./images/product_inform3.jpg" alt="">
+						<img src="./images/product_inform4.jpg" alt="">
+						<img src="./images/product_inform5.jpg" alt="">
+						<img src="./images/product_inform6.jpg" alt="">
+						<img src="./images/product_inform7.jpg" alt="">
+						<img src="./images/product_inform8.jpg" alt="">
+						<img src="./images/product_inform9.jpg" alt="">
+			
+			        </div>
+			        <div class="item">
+			            <dl class="pack">
+			                <dt>产品包装信息</dt>
+			                <dd>
+							<strong>规格:</strong>11.3千克（25磅）<br>
+							<br>
+							<strong>商品成分:</strong>三文鱼粉、燕麦片、马铃薯、全粒燕麦、去骨三文鱼、芥花籽油、苹果、天然香料、亚麻籽、昆诺阿麦、干海带、干菊苣根、l-赖氨酸、干嗜酸乳杆菌发酵产物、干肠球菌发酵产物、干黑曲霉发酵产物、干米曲霉发酵产物、丝兰提取物、干迷迭香、以及多种维生素和矿物质。(抗氧化剂:天然混合生育酚)<br>
+							<br>
+							<strong>营养分析:</strong>蛋白质≥22%、纤维≤4%、欧米加3≥0.36%、水份≤10%、脂肪≥12%、欧米加6≥1.8%、钙≥1.1%、磷≥0.8%
+			                </dd>
+			
+			            </dl>
+			
+			
+			        </div>
+			        <div class="item">
+			            <dl class="sale">
+			                <dt><i class="iconfont icon-baozhang-copy"></i>厂家服务</dt>
+			
+			                <dt><i class="iconfont icon-baozhang-copy"></i>店家承诺</dt>
+			                <dd>本平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！
+			                    注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+			                </dd>
+			                <dt><i class="iconfont icon-baozhang-copy"></i>正品行货</dt>
+			                <dd>本平台商城向您保证所售商品均为正品行货，本自营商品开具机打发票或电子发票。</dd>
+			                <dt><i class="iconfont icon-baozhang-copy"></i>无忧退货</dt>
+			                <dd>客户购买本平台商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）</dd>
+			            </dl>
+			        </div>
+			        <div class="item">
+			            <div class="comment">
+			                <div class="con_box">
+			                    <div><img src="./images/user1.jpg" class="h_pic"><span>&nbsp;&nbsp;用户1</span><span
+			                            class="score"><i class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i></span></div>
+			                    <span class="grade"> PLUS会员 </span>
+			                    <div class="con">内容：掰了一颗粮很酥，尝尝不是很香的那种狗粮，而且一点儿都不油，晚上掺着老款狗粮给毛孩吃，还不错，还是一如既往的光盘行动，哈哈哈? ?
+			                        <div class="img_list">
+			                            <img src="./images/com_f1.jpg" alt="">
+			                            <img src="./images/com_f2.jpg" alt="">
+			                            <img src="./images/com_f3.jpg" alt="">
+			                        </div>
+			                    </div>
+			                    <div class="times"><span>【三文鱼口味】犬粮大礼包1200g</span>
+			                        <font>2021-10-19 09:41</font><i class="iconfont icon-haoping">186</i><i
+			                            class="iconfont icon-liaotian"></i>
+			                    </div>
+			                    <!-- <div class="respond">
+			                        
+			
+			                            <p class="textinput"><label><textarea name="" cols="" rows="" maxlength="100" placeholder='回复&nbsp;章鱼哥:'
+			                                        class="input"></textarea></label></p>
+			                            <p id="numtj">您还可以输入<var class="textColor"></var>&nbsp;个字<button>提交</button></p>
+			                        
+			                        
+			                    </div> -->
+								<!-- <ul class="consult">
+			
+			                    </ul> -->
+			                </div>
+			
+			                <div class="con_box">
+			                    <div><img src="./images/user2.jpg" class="h_pic"><span>&nbsp;&nbsp;用户2</span><span
+			                            class="score"><i class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i></span></div>
+			                    <span class="grade"> PLUS会员 </span>
+			                    <div class="con">
+			                        内容：狗子很喜欢，鱼味很香，物美价廉非常棒  
+			                        <div class="img_list">
+			                            <img src="./images/com_f4.jpg" alt="">
+			                            <img src="./images/com_f5.jpg" alt="">
+			
+			                        </div>
+			                    </div>
+			                    <div class="times"><span>【鳟鱼口味】犬粮大礼包1200g</span>
+			                        <font>2022-11-02 20:38</font><i class="iconfont icon-haoping">16</i><i
+			                            class="iconfont icon-liaotian"></i>
+			                    </div>
+			                    <!-- <div class="respond">
+			                        
+			
+			                            <p class="textinput"><label><textarea name="" cols="" rows="" maxlength="100"
+			                                        class="input"></textarea></label></p>
+			                            <p id="numtj">您还可以输入<var class="textColor"></var>&nbsp;个字<button>提交</button></p>
+			                        
+			                    </div> -->
+			                </div>
+			                <div class="con_box">
+			                    <div><img src="./images/user3.jpg" class="h_pic"><span>&nbsp;&nbsp;用户3</span><span
+			                            class="score"><i class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i><i class="iconfont icon-fill_xingxingshoucang"></i><i
+			                                class="iconfont icon-fill_xingxingshoucang"></i></span></div>
+			                    <span class="grade"> PLUS会员 </span>
+			                    <div class="con">价格优惠，物流快，送货上门！满意！！！
+			                        <div class="img_list">
+			                            <img src="./images/com_f6.jpg" alt="">
+			
+			                        </div>
+			                    </div>
+			                    <div class="times"><span>【鸡肉口味】猫零食大礼包1000g</span>
+			                        <font>2022-11-28 15:41</font><i class="iconfont icon-haoping">19</i><i
+			                            class="iconfont icon-liaotian"></i>
+			                    </div>
+			                    <!-- <div class="respond">
+			                       
+			
+			                            <p class="textinput"><label><textarea name="" cols="" rows="" maxlength="100"
+			                                        class="input"></textarea></label></p>
+			                            <p id="numtj">您还可以输入<var class="textColor"></var>&nbsp;个字<button>提交</button></p>
+			                        
+			                    </div> -->
+			                </div>
+			            </div>
+			        </div>
+			        <div class="item">
+			            <div class="more ">
+			                <img src="./images/good_rating_goods1.jpg" alt="">
+			                <p class="goods_title">多可特 宠物湿巾 80片装 0酒精 猫狗通用</p>
+			                <div class="appraise">来自于 117384232 的评价</div>
+			                <div class="info">
+			                    <h4> <a href="#">【品牌日】爆款单品</a></h4>
+			                    <em>|</em>
+			                    <span> 7.9元</span>
+			                </div>
+			            </div>
+			            <div class="more">
+			                <img src="./images/good_rating_goods2.jpg" alt="">
+			                <p class="goods_title">多可特 狗狗专用抑菌沐浴乳 500ML（含泵头）</p>
+			                <div class="appraise">来自于 197384278 的评价</div>
+			                <div class="info">
+			                    <h4> <a href="#">【品牌日】爆款单品</a></h4>
+			                    <em>|</em>
+			                    <span> 15.9元</span>
+			                </div>
+			            </div>
+			            <div class="more">
+			                <img src="./images/good_rating_goods3.jpg" alt="">
+			                <p class="goods_title">GiGwi/贵为 响纸系列狗玩具 发声玩具 耐咬耐磨</p>
+			                <div class="appraise">来自于 1189584582 的评价</div>
+			                <div class="info">
+			                    <h4> <a href="#">【品牌日】爆款单品</a></h4>
+			                    <em>|</em>
+			                    <span> 24元</span>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+			
+</body>
+
+</html>

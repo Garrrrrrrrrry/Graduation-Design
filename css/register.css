@@ -1,0 +1,165 @@
+body {
+	/* 设置背景渐变 */
+	background-image: linear-gradient(to left,
+			#ffe6d9, #fff3ee);
+	display: block;
+	justify-content: center;
+}
+
+@font-face {
+  font-family: "仓耳渔阳体 W05";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/bwEOQ882gpb4/IrsvO-wgBO-MeYt3DDKWX.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/bwEOQ882gpb4/rzHiw1LptxuS1juKM6DHz.woff") format("woff");
+  font-display: swap;
+}
+
+/* 顶部logo*/
+.header {
+	width: 100%;
+}
+.header div.logo {
+	width: 1200px;
+	margin: 0 auto;
+	height: 110px;
+}
+
+.header div.logo img {
+	height: 110px;
+}
+
+.header span{
+    line-height: 110px;
+    font-size:18px ;
+    color: gray;
+}
+header .logo span a{
+    color: #d12709;
+}
+
+/* 注册框 */
+.registerarea {
+    width: 1200px;
+    height: 520px;
+    border: 1px solid rgb(241, 206, 89);
+    margin: 0 auto;
+}
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid rgb(241, 206, 89);
+    background-color: rgb(241, 206, 89);
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.reg_form {
+    width: 400px;
+    margin: 50px auto ;
+}
+.reg_form ul li {
+    width: 600px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+/* .reg_form ul li:nth-child(4),.reg_form ul li:nth-child(6),.reg_form ul li:nth-child(7){
+    border: none;
+    margin-bottom: 0;
+} */
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: center;
+    font-family:"仓耳渔阳体 W05";
+    font-size: 17px;
+    font-weight: 700;
+}
+.reg_form ul li .inp {
+    width: 266px;
+    height: 38px;
+    border: 1px solid rgb(206, 197, 197);
+    padding-left: 15px; 
+}
+.reg_form ul li .inp::placeholder{
+    color: rgb(184, 173, 173);
+}
+.btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(241, 206, 89);
+    font-size: 14px;
+    color: #fff;
+    margin: 0 20%;
+}
+/* 安全程度 */
+.safe {
+    display: none;
+    padding-left: 170px;
+}
+.safe em {
+    display: none;
+    padding: 0 12px;
+    color: #fff;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #40b83f;
+}
+.qiang {
+    background-color: #f79100;
+}
+/* 复选框 */
+input[type=checkbox]{
+    cursor: pointer;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+}
+
+input[type=checkbox]::after{
+    position: relative;
+    top: 0;
+    background-color: #333130;
+    color: #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: ' ';
+    border-radius: 3px
+}
+       
+input[type=checkbox]:checked::after{
+    background-color: #7eda7e;
+    content: "✓";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.agree a {
+    color: #1ba1e6;
+}
+/*  */
+.bottom{
+	text-align: center;
+	    padding-top: 26px;
+}
+#msg img {
+    width: 40px;
+    height: 40px;
+    vertical-align: bottom;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+input[type="checkbox"] {
+    margin-left: 20%;
+}
